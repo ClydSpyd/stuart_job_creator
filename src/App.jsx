@@ -13,7 +13,7 @@ const App = () =>{
     useEffect(()=>{
         //append GAPI script to body if not yet added
         const script = document.getElementById("gapi_script")
-        if(!appState.mapObject && !script)initiateMapsAPI(dispatch)
+        if(!appState.map && !script)initiateMapsAPI(dispatch)
     },[])
 
 
