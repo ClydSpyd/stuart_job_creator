@@ -15,7 +15,6 @@ const CreateBtn = ({ dispatch, locationData, markers, map, refs:{ pickupRef, dro
         
         //POST to Stuart API
         const {status} = await createJobStuartApi({pickup: locationData.pickup.address, dropoff:locationData.dropoff.address})
-        console.log(status)
 
         //reset UI
         dispatch({ type:"reset_state"})
